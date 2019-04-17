@@ -1,19 +1,19 @@
 <template>
   <div>
-    <Header/>
-    <router-view/>
-    <Footer/>
+    <top-nav/>
+    <router-view></router-view>
+    <button-nav/>
   </div>
 </template>
 
 <script>
-  import {Header, Footer} from './components'
+  import {TopNav, ButtonNav} from './components'
 
   export default {
     name: "layout",
     components: {
-      Header,
-      Footer,
+      TopNav,
+      ButtonNav,
     }
   }
 </script>

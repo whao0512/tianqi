@@ -1,12 +1,12 @@
 <template>
   <div>
-    footer
+    头部
   </div>
 </template>
 
 <script>
     export default {
-        name: "footer"
+        name: "top-nav",
     }
 </script>
 

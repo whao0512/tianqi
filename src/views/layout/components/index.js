@@ -1,2 +1,2 @@
-export { default as Header } from './header'
-export { default as Footer } from './footer'
+export { default as TopNav } from './button-nav'
+export { default as ButtonNav } from './top-nav'
