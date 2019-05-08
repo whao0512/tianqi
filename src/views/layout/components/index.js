@@ -1,2 +1,2 @@
-export { default as TopNav } from './button-nav'
-export { default as ButtonNav } from './top-nav'
+export { default as BottomNav } from './bottom-nav'
+export { default as TopNav } from './top-nav'

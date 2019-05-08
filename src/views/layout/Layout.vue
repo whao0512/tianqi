@@ -2,18 +2,18 @@
   <div>
     <top-nav/>
     <router-view></router-view>
-    <button-nav/>
+    <bottom-nav/>
   </div>
 </template>
 
 <script>
-  import {TopNav, ButtonNav} from './components'
+  import {TopNav, BottomNav} from './components'
 
   export default {
     name: "layout",
     components: {
       TopNav,
-      ButtonNav,
+      BottomNav,
     }
   }
 </script>
