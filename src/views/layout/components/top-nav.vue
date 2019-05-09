@@ -3,7 +3,9 @@
     <el-header class="container">
       <el-row>
         <el-col :span="6">
-          <div class="grid-content bg-purple-dark">天奇logo</div>
+          <div class="grid-content bg-purple-dark" style="height: 61px;">
+            <img :src="imgSrc" alt="">
+          </div>
         </el-col>
         <el-col :span="18">
           <el-menu
@@ -51,7 +53,8 @@
     data() {
       return {
         activeIndex: '1',
-        activeIndex2: '1'
+        activeIndex2: '1',
+        imgSrc: '../../static/images/logo.jpg'
       };
     },
     methods: {
