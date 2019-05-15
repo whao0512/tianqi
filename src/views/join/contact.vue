@@ -1,12 +1,12 @@
 <template>
-  <div>
-    <router-view style="min-height: 791px"></router-view>
-  </div>
+    <div>
+      联系我们
+    </div>
 </template>
 
 <script>
     export default {
-        name: "join"
+        name: "contact"
     }
 </script>
 

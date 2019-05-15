@@ -39,12 +39,12 @@
               <!--<el-menu-item index="5-2"><router-link to="/">2</router-link></el-menu-item>-->
             <!--</el-submenu>-->
             <el-menu-item index="/verify">防伪查询</el-menu-item>
-            <!--<el-submenu index="7">-->
-              <!--<template slot="title">加入我们</template>-->
-              <!--<el-menu-item index="7-1"><router-link to="/">商务加盟</router-link></el-menu-item>-->
-              <!--<el-menu-item index="7-2"><router-link to="/">人事招聘</router-link></el-menu-item>-->
-              <!--<el-menu-item index="7-2"><router-link to="/">加入我们</router-link></el-menu-item>-->
-            <!--</el-submenu>-->
+            <el-submenu index="join">
+              <template slot="title">加入我们</template>
+              <el-menu-item index="/join/cooperation">商务加盟</el-menu-item>
+              <el-menu-item index="/join/recruit">人事招聘</el-menu-item>
+              <el-menu-item index="/join/contact">联系我们</el-menu-item>
+            </el-submenu>
           </el-menu>
         </el-col>
       </el-row>

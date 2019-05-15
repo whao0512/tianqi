@@ -1,12 +1,12 @@
 <template>
   <div>
-    <router-view style="min-height: 791px"></router-view>
+    人事招聘
   </div>
 </template>
 
 <script>
     export default {
-        name: "join"
+        name: "recruit"
     }
 </script>
 

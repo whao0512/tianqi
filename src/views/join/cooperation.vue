@@ -1,12 +1,12 @@
 <template>
   <div>
-    <router-view style="min-height: 791px"></router-view>
+    商务加盟
   </div>
 </template>
 
 <script>
     export default {
-        name: "join"
+        name: "cooperation"
     }
 </script>
 

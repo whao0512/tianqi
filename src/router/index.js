@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Layout from '../views/layout/Layout'
 import Brand from '../views/brand/brand'
+import Join from '../views/join/join'
 
 Vue.use(Router);
 
@@ -44,7 +45,22 @@ export const constantRouterMap = [
       },
       {
         path: '/join',
-        component: () => import('@/views/join/join'),
+        redirect: '/join/cooperation',
+        component: Join,
+        children: [
+          {
+            path: 'cooperation',
+            component: () => import('@/views/join/cooperation')
+          },
+          {
+            path: 'recruit',
+            component: () => import('@/views/join/recruit'),
+          },
+          {
+            path: 'contact',
+            component: () => import('@/views/join/contact'),
+          },
+        ]
       },
       {
         path: '/permission-seller',
