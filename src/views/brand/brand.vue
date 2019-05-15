@@ -1,5 +1,7 @@
 <template>
-  <div>brand</div>
+  <div>
+    <router-view style="min-height: 791px"></router-view>
+  </div>
 </template>
 
 <script>

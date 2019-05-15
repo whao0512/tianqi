@@ -1726,7 +1726,7 @@ header.top-head-4 .logo {
 .img-pattern {
   border-top: 1px #E4E4E4 solid;
   border-bottom: 1px #E4E4E4 solid;
-  /*background: #fff url('../images/patterns/1.png');*/
+  background: #fff url('../../static/images/patterns/1.png');
 }
 /* ==========================================================================
   5. COMMON STYLES.
@@ -9056,4 +9056,27 @@ i.icon {
   text-justify : auto;
   text-align:justify;
   line-height: 30px;
+}
+
+
+*{
+  margin:0;
+  padding:0;
+}
+html {
+  overflow-y: scroll;
+}
+
+:root {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+:root body {
+  position: absolute;
+}
+
+body {
+  width: 100vw;
+  overflow: hidden;
 }
