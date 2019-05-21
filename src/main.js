@@ -13,7 +13,7 @@ import './css/default.css'
 // import './css/introjs.css'
 // import './css/prettyPhoto.css'
 // import './css/setting.css'
-import './css/slick.css'
+// import './css/slick.css'
 Vue.use(ElementUI)
 
 Vue.config.productionTip = false
