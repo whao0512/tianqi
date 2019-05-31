@@ -4,12 +4,12 @@
       <el-row>
         <el-col :span="24" class="copyrights-center cell-12">
 
-          Copyright © 2014-2019 FBI Pet Incorporated Limited(HK)
+          Copyright © 2014-2019 Tianqi Trading （HK） Limited
           <ul class="footer-menu-center">
-            <li><a href="">首页</a></li>
-            <li><a href="">关于我们</a></li>
-            <li><a href="">联络我们</a></li>
-            <li><a href="">防伪查询</a></li>
+            <li><router-link to="/home">首页</router-link></li>
+            <li><router-link to="/about">关于我们</router-link></li>
+            <li><router-link to="/authorize">授权商家</router-link></li>
+            <li><router-link to="/verify">防伪查询</router-link></li>
           </ul>
         </el-col>
       </el-row>

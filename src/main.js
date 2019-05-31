@@ -5,6 +5,8 @@ import router from './router'
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import 'element-ui/lib/theme-chalk/display.css';
+import 'jquery'
 import './css/responsive.css'
 import './css/style.css'
 import './css/animate.css'

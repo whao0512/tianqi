@@ -3,7 +3,7 @@
     <div class="container">
       <h3 class="block-head">明星产品</h3>
       <el-row :gutter="20">
-        <el-col :span="6" v-for="item in starProduct" class="portfolio-item fx animated fadeInDown" :key="item.name">
+        <el-col :md="6" :xs="12" v-for="item in starProduct" class="portfolio-item fx animated fadeInDown" :key="item.name">
           <div class="img-holder">
             <div class="img-over full-over" style="display: none">
               <a :ref="item.name" class="fx zoom undefined animated fadeOutDown"

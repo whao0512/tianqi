@@ -14,7 +14,7 @@
         </div>
         <div class="cell-1"></div>
         <div class="cell-4">
-          <div class="cell-4 fx animated fadeInUp" data-animate="fadeInUp">
+          <div class="cell-4 fx animated fadeInUp" data-animate="fadeInUp" style="width: 350px;">
             <img :src="goodDetail.img" alt="">
           </div>
         </div>

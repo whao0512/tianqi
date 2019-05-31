@@ -69,6 +69,10 @@ export const constantRouterMap = [
       {
         path: '/verify',
         component: () => import('@/views/verify/verify'),
+      },
+      {
+        path: '/authorize',
+        component: () => import('@/views/authorize/authorize'),
       }
     ]
   },

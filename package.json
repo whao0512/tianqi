@@ -13,6 +13,7 @@
     "async-validator": "^1.11.0",
     "deepmerge": "^3.2.0",
     "element-ui": "^2.7.2",
+    "jquery": "^3.4.1",
     "lodash.tail": "^4.1.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"

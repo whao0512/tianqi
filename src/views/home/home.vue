@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-carousel indicator-position="outside" height="478px">
+    <el-carousel class="tq-carousel" indicator-position="outside" height="660px">
       <el-carousel-item v-for="item in banner" :key="item.id">
           <img v-bind:src="item.imgSrc">
       </el-carousel-item>
@@ -12,7 +12,7 @@
         <el-tabs v-model="activeName" @tab-click="handleClick">
           <el-tab-pane label="BOZITA" name="first">
             <el-row :gutter="20">
-              <el-col :span="6" v-for="item in data.bozita" class="portfolio-item fx animated fadeInDown" :key="item.name">
+              <el-col :md="6" :xs="12" v-for="item in data.bozita" class="portfolio-item fx animated fadeInDown" :key="item.name">
                 <div class="img-holder" @mouseenter="imgMouseEnter(item.name)" @mouseleave="imgMouseLeave(item.name)">
                   <div class="img-over full-over" style="display: none">
                     <a :ref="item.name" class="fx zoom undefined animated fadeOutDown"
@@ -32,7 +32,7 @@
           </el-tab-pane>
           <el-tab-pane label="Fromm" name="second">
             <el-row :gutter="20">
-              <el-col :span="6" v-for="item in data.fromm" class="portfolio-item fx animated fadeInDown" :key="item.name">
+              <el-col :md="6" :xs="12" v-for="item in data.fromm" class="portfolio-item fx animated fadeInDown" :key="item.name">
                 <div class="img-holder" @mouseenter="imgMouseEnter(item.name)" @mouseleave="imgMouseLeave(item.name)">
                   <div class="img-over full-over" style="display: none">
                     <a :ref="item.name" class="fx zoom undefined animated fadeOutDown"
@@ -52,7 +52,7 @@
           </el-tab-pane>
           <el-tab-pane label="Solid GOLD" name="third">
             <el-row :gutter="20">
-              <el-col :span="6" v-for="item in data.solidGold" class="portfolio-item fx animated fadeInDown" :key="item.name">
+              <el-col :md="6" :xs="12" v-for="item in data.solidGold" class="portfolio-item fx animated fadeInDown" :key="item.name">
                 <div class="img-holder" @mouseenter="imgMouseEnter(item.name)" @mouseleave="imgMouseLeave(item.name)">
                   <div class="img-over full-over" style="display: none">
                     <a :ref="item.name" class="fx zoom undefined animated fadeOutDown"
@@ -72,7 +72,7 @@
           </el-tab-pane>
           <el-tab-pane label="哈根纽翠斯" name="fourth">
             <el-row :gutter="20">
-              <el-col :span="6" v-for="item in data.nutrience" class="portfolio-item fx animated fadeInDown" :key="item.name">
+              <el-col :md="6" :xs="12" v-for="item in data.nutrience" class="portfolio-item fx animated fadeInDown" :key="item.name">
                 <div class="img-holder" @mouseenter="imgMouseEnter(item.name)" @mouseleave="imgMouseLeave(item.name)">
                   <div class="img-over full-over" style="display: none">
                     <a :ref="item.name" class="fx zoom undefined animated fadeOutDown"
@@ -91,32 +91,6 @@
             </el-row>
           </el-tab-pane>
         </el-tabs>
-        <!--<div class="portfolio-box">-->
-        <!--<div class="portfolio-filterable">-->
-        <!--<div class="row">-->
-        <!--<div class="gry-bg skew-25">-->
-        <!--<span class="skew25 left filter-by">选择:</span>-->
-        <!--<ul id="filters">-->
-        <!--<li class="active">-->
-        <!--<a href="#" class="skew25 filter">全部</a>-->
-        <!--</li>-->
-        <!--<li>-->
-        <!--<a href="#" class="skew25 filter">BOZITA</a>-->
-        <!--</li>-->
-        <!--<li>-->
-        <!--<a href="#" class="skew25 filter">Fromm</a>-->
-        <!--</li>-->
-        <!--<li>-->
-        <!--<a href="#" class="skew25 filter">Solid GOLD</a>-->
-        <!--</li>-->
-        <!--<li>-->
-        <!--<a href="#" class="skew25 filter">哈根纽翠斯</a>-->
-        <!--</li>-->
-        <!--</ul>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
       </div>
     </div>
   </div>
@@ -130,7 +104,7 @@
         banner: [
           {imgSrc: '../../static/images/banner/BOZTIA.png', id: 1},
           {imgSrc: '../../static/images/banner/Fromm.png', id: 2},
-          {imgSrc: '../../static/images/banner/nutrience.jpg', id: 3},
+          {imgSrc: '../../static/images/banner/Nutrience_banner.jpg', id: 3},
           {imgSrc: '../../static/images/banner/solidGold.png', id: 4},
         ],
         data: {
@@ -288,7 +262,7 @@
     },
     methods: {
       handleClick(tab, event) {
-        console.log(tab, event);
+        // console.log(tab, event);
       },
       imgMouseEnter(name){
         // this.$refs[name].removeClass('fadeOutDown').addClass('fadeInUp')
@@ -316,6 +290,13 @@
   .el-carousel__item:nth-child(2n+1) {
     background-color: #d3dce6;
   }
+
+  @media (max-width: 796px) {
+    .tq-carousel {
+      height: 130px!important;
+    }
+  }
+
 
 
 </style>
